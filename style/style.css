@@ -1,0 +1,138 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-image: url(../img/fondo.jpeg)
+}
+
+header{
+    background-color:#511d8c;
+    position: fixed;
+    top:0px;
+    width:100%;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    font-size:24px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+ul li a{
+    color: white;
+}
+
+title{
+    font-size: 100px;
+}
+
+body{
+    font-size: 20px;
+}
+
+.headerProgramas{
+    background-color:#511d8c;
+    position: fixed;
+    top:26px;
+    width:100%;    
+}
+
+.fotoPB{
+    height: 40%;
+    width: 40%;
+}
+
+p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.stvivo{
+    background-color: blueviolet;
+    width: 600px;
+    height: 360px;
+    border: 3px solid black;
+    border-radius:7px;
+}
+
+.stvivo{
+    text-align: center;
+    padding: 10px;
+    margin-top:50px;
+    margin-left:380px;
+}
+
+.descripcion{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    background-color:#511d8cb4;
+    width:560px;
+    text-align:justify;
+}
+
+.destacados{
+    background-color: blueviolet;
+    width: 600px;
+    height: 360px;
+    border: 3px solid black;
+    border-radius:7px;
+}
+
+.destacados{
+    text-align: center;
+    padding: 10px;
+    margin-top:50px;
+    margin-left:380px;
+    margin-bottom: 40px;
+}
+
+.noticia{
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-right: 300px;
+    margin-left: 30px;
+    position:static;
+    background-color:#511d8cb4;
+}
+
+.noticiaTitulo{
+    font-family: 'Kanit', sans-serif;
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.noticiaPrograma{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.noticiaBajada{
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.notiFoto{
+    margin:auto;
+    display:block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width:100%;
+    background-color:#511d8c;
+}
+footer a{
+    font-size:24px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
