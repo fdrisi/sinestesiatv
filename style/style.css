@@ -4,14 +4,25 @@
 }
 
 body{
+    text-align:center;
+    font-family: 'Josefin', sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-image: url(../img/fondo.jpeg)
 }
 
 header{
-    background-color:#511d8c;
-    position: fixed;
-    top:0px;
+    color: white;
+    font-size: large;
+    display: grid;
+    justify-content: left;
     width:100%;
+    position: fixed;
+    
+    background: rgb(189,85,177);
+    background: linear-gradient(90deg, rgba(189,85,177,1) 0%, rgba(167,16,151,1) 29%, rgba(73,36,195,1) 80%);
 }
 
 ul li{
@@ -34,10 +45,28 @@ body{
 }
 
 .headerProgramas{
-    background-color:#511d8c;
+    color: white;
+    font-size: large;
+    display: grid;
+    justify-content: left;
+    width:100%;
     position: fixed;
-    top:26px;
-    width:100%;    
+    background: rgb(189,85,177);
+    background: linear-gradient(90deg, rgba(189,85,177,1) 0%, rgba(167,16,151,1) 29%, rgba(73,36,195,1) 80%);
+    top:26px;   
+}
+
+.descprograma img{
+    height:200px;
+    width:200px;
+}
+
+.recomendados, .descripcion, aside, .stvivo{
+    color: black;
+    border: 6px solid darkslateblue;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color:rgba(137, 43, 226, 0.651)
 }
 
 .fotoPB{
@@ -45,41 +74,31 @@ body{
     width: 40%;
 }
 
-p{
-    font-family: 'Kanit', sans-serif;
-    font-size: 29px;
-    font-weight: 600;
-}
+.descprograma{
+    color: black;
+    border: 6px solid darkslateblue;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 65px;
+    margin-bottom: 12px;
+    background-color:rgba(137, 43, 226, 0.651)
+} 
 
-.stvivo{
-    background-color: blueviolet;
-    width: 600px;
-    height: 360px;
-    border: 3px solid black;
-    border-radius:7px;
-}
-
-.stvivo{
-    text-align: center;
-    padding: 10px;
-    margin-top:50px;
-    margin-left:380px;
-}
-
-.descripcion{
-    margin-top: 30px;
-    margin-bottom: 40px;
+.memeskbh{
+    color: black;
+    border: 6px solid darkslateblue;
     margin-left: 10px;
-    background-color:#511d8cb4;
-    width:560px;
-    text-align:justify;
+    margin-right: 10px;
+    margin-top: 45px;
+    margin-bottom: 12px;
+    background-color:rgba(137, 43, 226, 0.651)
 }
 
 .destacados{
+    color: black;
+    border: 6px solid darkslateblue;
     background-color: blueviolet;
-    width: 600px;
-    height: 360px;
-    border: 3px solid black;
+    align-self: center;
     border-radius:7px;
 }
 
@@ -87,7 +106,6 @@ p{
     text-align: center;
     padding: 10px;
     margin-top:50px;
-    margin-left:380px;
     margin-bottom: 40px;
 }
 
@@ -116,6 +134,7 @@ p{
     font-family: 'Kanit', sans-serif;
     font-size: 20px;
     font-weight: 800;
+    color:black
 }
 
 .notiFoto{
@@ -129,10 +148,169 @@ footer{
     position: fixed;
     bottom: 0px;
     width:100%;
-    background-color:#511d8c;
-}
+    background: rgb(189,85,177);
+    background: linear-gradient(90deg, rgba(189,85,177,1) 0%, rgba(167,16,151,1) 29%, rgba(73,36,195,1) 80%);}
 footer a{
     font-size:24px;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
+}
+
+header{
+    grid-area: header;
+}
+
+.stvivo{
+    grid-area: stvivo;
+}
+
+.descripcion{
+    grid-area: descripcion;
+}
+
+aside{
+    grid-area: sidebar;
+}
+
+.recomendados{
+    grid-area: recomendados;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.encabezado{
+    margin-bottom: 1,5em;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "stvivo"
+    "descripcion"
+    "sidebar"
+    "recomendados"
+    "footer";
+    gap:20px;
+}
+
+.juegosindie{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap:15px;
+    justify-items: center;
+}
+
+.recomendados .juegosindie img, aside img {
+    width: 500px;
+    height: 400px;
+    margin-top: 15px;
+}
+
+.recomendados .juegosindie div, aside{
+    border: 3px black solid;
+    background-color:rgba(117, 43, 43, 0.87);
+}
+
+.recomendados{
+    margin-bottom: 4em;
+}
+
+footer{
+    margin-top: 0;
+}
+
+@media (min-width:500px){
+    .encabezado{
+        display: grid;
+        grid-template-areas: 
+        "header         header"
+        "nav            nav"
+        "stvivo         sidebar"
+        "descripcion    descripcion"
+        "recomendados   recomendados"
+        "footer         footer";
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul, .sidebar{
+        color: salmon;
+        border:2px solid lightblue;
+    }
+    .recomendados .juegosindie img, aside img{
+        width: 350px;
+        height: 300px;
+    }
+
+    .juegosindie{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:15px;
+        margin: 3em;
+    }
+
+    footer{
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px){
+    body{
+        background-image: url(../img/fondo.jpeg)
+    };
+    .encabezado{
+        margin-bottom: 1.5em;
+        grid-template-columns: 2fr 5fr 3fr;
+        grid-template-areas:
+    "header     header      header"
+    "stvivo     stvivo      sidebar"
+    "descripcion    descripcion  descripcion"
+    "recomendados   recomendados    recomendados"
+    "footer footer  footer"
+    }
+    nav ul{
+        flex-direction: row;
+        border: 1px solid black;
+    }
+    .juegosindie{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:15px;
+        margin: 3em;
+    }
+    .recomendados .juegosindie img{
+        width: 200px;
+        height: 150px;
+    }
+    footer{
+        margin-top: 3em;
+    }
+}
+
+@media (min-width: 1024px) {
+    body{
+        background-image: url(../img/fondo.jpeg)
+    }
+
+    .juegosindie{
+        padding: 2em;
+        display: grid;grid-template-columns: 1fr 1fr;
+        margin:0;
+    }
+    .recomendados .juegosindie img{
+        width: 500px;
+        height: 425px;
+        margin-top: 15px;
+    }
+}
+
+.zoom{
+    transition: all 1.5s;
+}
+
+.zoom:hover{
+    transform: scale(1.3);
 }
