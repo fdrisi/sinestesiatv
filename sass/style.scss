@@ -1,9 +1,11 @@
+@import "variables";
 @import "fuentes";
-@import "general.scss";
+@import "general";
 @import "headerFooter";
 @import "vivo";
 @import "descripcion";
 @import "tbh";
+@import "noticiasInicio";
 @import "form";
 
 .noticiasGrid{
@@ -11,31 +13,6 @@
     margin-bottom:45px;
     margin-left:30px;
     margin-right:30px;
-}
-
-.noticiasUlt{
-    color: black;
-    border: 6px solid blueviolet;
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-top: 30px;
-    background-color:rgba(137, 43, 226, 0.651);
-}
-
-.card-body .card-title{
-    color: black;
-    font-size: 18px;
-}
-
-.card{
-    position:static;
-}
-
-.encabezado{
-    color: black;
-    margin-left:45px;
 }
 
 .recomendados{
@@ -73,7 +50,7 @@
 
 .recomendados .juegosindie div, aside{
     border: 6px solid blueviolet;    
-    background-color:rgba(137, 43, 226, 0.651);
+    background-color:rgba(137, 43, 226, 0.911);
 }
 
 .recomendados{
@@ -177,7 +154,7 @@
         margin-bottom: 40px;
         margin-left: 40px;
         margin-top: 30px;
-        background-color:rgba(137, 43, 226, 0.651);
+        background-color:rgba(137, 43, 226, 0.911);
     }
     .recomendados{
         color: black;

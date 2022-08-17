@@ -22,8 +22,8 @@ header {
   width: 100%;
   top: 0;
   padding: 0px;
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 900;
 }
 
 .navbar {
@@ -50,14 +50,14 @@ footer {
   padding-right: 15px;
   margin: 0 auto;
   margin-top: 80px;
-  background-color: rgba(137, 43, 226, 0.651);
+  background-color: rgba(137, 43, 226, 0.911);
 }
 
 .descripcion {
   font-size: 28px;
   color: black;
   font-weight: 800;
-  background-color: rgba(137, 43, 226, 0.911);
+  background-color: rgba(187, 145, 224, 0.911);
   padding: 6px;
   margin-left: 60px;
   margin-top: 20px;
@@ -66,7 +66,7 @@ footer {
 }
 
 .tbh {
-  background-color: rgba(137, 43, 226, 0.651);
+  background-color: rgba(137, 43, 226, 0.911);
   color: black;
   font-weight: 900;
   font-size: 24px;
@@ -83,13 +83,35 @@ footer {
   margin: 0px auto;
 }
 
+.noticiasUlt {
+  color: black;
+  border: 6px solid blueviolet;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-top: 30px;
+  background-color: rgba(137, 43, 226, 0.911);
+}
+.noticiasUlt .encabezado {
+  color: black;
+  margin-left: 45px;
+}
+.noticiasUlt .card {
+  position: static;
+}
+.noticiasUlt .card-body .card-title {
+  color: black;
+  font-size: 18px;
+}
+
 .formulario {
   color: black;
   border: 6px solid blueviolet;
   width: 700px;
   margin: auto;
   font-size: 20px;
-  background-color: rgba(137, 43, 226, 0.651);
+  background-color: rgba(187, 145, 224, 0.911);
   padding: 15px;
   padding-bottom: 8px;
   margin-top: 75px;
@@ -100,31 +122,6 @@ footer {
   margin-bottom: 45px;
   margin-left: 30px;
   margin-right: 30px;
-}
-
-.noticiasUlt {
-  color: black;
-  border: 6px solid blueviolet;
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 40px;
-  margin-left: 40px;
-  margin-top: 30px;
-  background-color: rgba(137, 43, 226, 0.651);
-}
-
-.card-body .card-title {
-  color: black;
-  font-size: 18px;
-}
-
-.card {
-  position: static;
-}
-
-.encabezado {
-  color: black;
-  margin-left: 45px;
 }
 
 .recomendados {
@@ -162,7 +159,7 @@ footer {
 
 .recomendados .juegosindie div, aside {
   border: 6px solid blueviolet;
-  background-color: rgba(137, 43, 226, 0.651);
+  background-color: rgba(137, 43, 226, 0.911);
 }
 
 .recomendados {
@@ -266,7 +263,7 @@ footer {
     margin-bottom: 40px;
     margin-left: 40px;
     margin-top: 30px;
-    background-color: rgba(137, 43, 226, 0.651);
+    background-color: rgba(137, 43, 226, 0.911);
   }
   .recomendados {
     color: black;
