@@ -6,14 +6,9 @@
 @import "descripcion";
 @import "tbh";
 @import "noticiasInicio";
+@import "gridNoticias";
+@import "videosDestacados";
 @import "form";
-
-.noticiasGrid{
-    margin-top:60px;
-    margin-bottom:45px;
-    margin-left:30px;
-    margin-right:30px;
-}
 
 .recomendados{
     color: black;
@@ -28,7 +23,7 @@
     border: 6px solid blueviolet;    
 }
 
-.recomendados h1{
+.recomendados p{
     font-size: 32px;
     font-weight: 800;
     text-align: center;
@@ -42,19 +37,29 @@
     justify-items: center;
 }
 
-.recomendados .juegosindie img, aside img {
+.recomendados .juegosindie img{
     width: 500px;
     height: 400px;
     margin-top: 15px;
 }
 
-.recomendados .juegosindie div, aside{
+.recomendados .juegosindie div{
     border: 6px solid blueviolet;    
     background-color:rgba(137, 43, 226, 0.911);
 }
 
 .recomendados{
     margin-bottom: 4em;
+}
+
+.destacados{
+    border: 6px solid blueviolet;    
+    background-color:rgba(137, 43, 226, 0.911);
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+    gap:15px;
+    justify-items: center;
 }
 
 @media (min-width:500px){

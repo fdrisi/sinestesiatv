@@ -84,25 +84,41 @@ footer {
 }
 
 .noticiasUlt {
-  color: black;
+  color: rgb(0, 0, 0);
   border: 6px solid blueviolet;
   width: 90%;
   padding: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 140px;
   margin-left: 40px;
   margin-top: 30px;
   background-color: rgba(137, 43, 226, 0.911);
 }
-.noticiasUlt .encabezado {
-  color: black;
-  margin-left: 45px;
-}
 .noticiasUlt .card {
   position: static;
 }
-.noticiasUlt .card-body .card-title {
+.noticiasUlt .encabezado {
   color: black;
-  font-size: 18px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 900;
+}
+.noticiasUlt .card-body b {
+  color: black;
+  font-size: 26px;
+}
+.noticiasUlt .card-body p {
+  color: black;
+  font-size: 22px;
+}
+
+.noticiasGrid {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.noticiasGrid .card {
+  position: static;
 }
 
 .formulario {
@@ -115,13 +131,6 @@ footer {
   padding: 15px;
   padding-bottom: 8px;
   margin-top: 75px;
-}
-
-.noticiasGrid {
-  margin-top: 60px;
-  margin-bottom: 45px;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 .recomendados {
@@ -137,7 +146,7 @@ footer {
   border: 6px solid blueviolet;
 }
 
-.recomendados h1 {
+.recomendados p {
   font-size: 32px;
   font-weight: 800;
   text-align: center;
@@ -151,19 +160,29 @@ footer {
   justify-items: center;
 }
 
-.recomendados .juegosindie img, aside img {
+.recomendados .juegosindie img {
   width: 500px;
   height: 400px;
   margin-top: 15px;
 }
 
-.recomendados .juegosindie div, aside {
+.recomendados .juegosindie div {
   border: 6px solid blueviolet;
   background-color: rgba(137, 43, 226, 0.911);
 }
 
 .recomendados {
   margin-bottom: 4em;
+}
+
+.destacados {
+  border: 6px solid blueviolet;
+  background-color: rgba(137, 43, 226, 0.911);
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 2fr;
+  gap: 15px;
+  justify-items: center;
 }
 
 @media (min-width: 500px) {
