@@ -43,14 +43,14 @@ footer {
   color: black;
   font-size: 28px;
   font-weight: 1200;
-  border: 6px solid blueviolet;
+  border: 3px solid blueviolet;
   height: 100%;
   width: 650px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   margin-top: 80px;
-  background-color: rgba(137, 43, 226, 0.911);
+  background-color: rgba(187, 145, 224, 0.911);
 }
 
 .descripcion {
@@ -62,11 +62,11 @@ footer {
   margin-left: 60px;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 6px solid blueviolet;
+  border: 3px solid blueviolet;
 }
 
 .tbh {
-  background-color: rgba(137, 43, 226, 0.911);
+  background-color: rgba(187, 145, 224, 0.911);
   color: black;
   font-weight: 900;
   font-size: 24px;
@@ -74,7 +74,7 @@ footer {
   margin: 60px;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 6px solid blueviolet;
+  border: 3px solid blueviolet;
   text-align: center;
 }
 .tbh img {
@@ -85,13 +85,13 @@ footer {
 
 .noticiasUlt {
   color: rgb(0, 0, 0);
-  border: 6px solid blueviolet;
+  border: 3px solid blueviolet;
   width: 90%;
   padding: 10px;
   margin-bottom: 140px;
   margin-left: 40px;
   margin-top: 30px;
-  background-color: rgba(137, 43, 226, 0.911);
+  background-color: rgba(187, 145, 224, 0.911);
 }
 .noticiasUlt .card {
   position: static;
@@ -111,6 +111,29 @@ footer {
   font-size: 22px;
 }
 
+.recomendados {
+  color: black;
+  text-align: center;
+  background-color: rgba(117, 43, 43, 0.87);
+  padding: 6px;
+  margin: 60px;
+  margin-top: 20px;
+  margin-bottom: 1em;
+  border: 3px solid blueviolet;
+}
+.recomendados b {
+  font-weight: 900;
+  font-size: 28px;
+}
+.recomendados .juegosindie p {
+  font-size: 24px;
+  font-weight: 600;
+}
+.recomendados .juegosindie div {
+  border: 3px solid blueviolet;
+  background-color: rgba(187, 145, 224, 0.911);
+}
+
 .noticiasGrid {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -121,9 +144,28 @@ footer {
   position: static;
 }
 
+.container {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.destacados {
+  padding-top: 6px;
+  padding-left: 4px;
+  color: black;
+  font-size: 28px;
+  font-weight: 1200;
+  border: 3px solid blueviolet;
+  background-color: rgba(187, 145, 224, 0.911);
+}
+.destacados iframe {
+  width: 336px;
+  height: 189px;
+}
+
 .formulario {
   color: black;
-  border: 6px solid blueviolet;
+  border: 3px solid blueviolet;
   width: 700px;
   margin: auto;
   font-size: 20px;
@@ -131,25 +173,6 @@ footer {
   padding: 15px;
   padding-bottom: 8px;
   margin-top: 75px;
-}
-
-.recomendados {
-  color: black;
-  text-align: center;
-  font-weight: 800;
-  background-color: rgba(117, 43, 43, 0.87);
-  font-size: 20px;
-  padding: 6px;
-  margin: 60px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  border: 6px solid blueviolet;
-}
-
-.recomendados p {
-  font-size: 32px;
-  font-weight: 800;
-  text-align: center;
 }
 
 .juegosindie {
@@ -160,29 +183,63 @@ footer {
   justify-items: center;
 }
 
-.recomendados .juegosindie img {
-  width: 500px;
-  height: 400px;
-  margin-top: 15px;
+@media (min-width: 320px) {
+  body {
+    background-position: center;
+  }
+  .stvivo {
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .stvivo iframe {
+    width: 504px;
+    height: 284px;
+  }
+}
+.descripcion, .tbh {
+  width: 550px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
-.recomendados .juegosindie div {
-  border: 6px solid blueviolet;
-  background-color: rgba(137, 43, 226, 0.911);
+.noticiasUlt {
+  width: 550px;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .recomendados {
-  margin-bottom: 4em;
+  width: 540px;
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+
+.recomendados .juegosindie {
+  width: 520px;
+}
+
+.recomendados .juegosindie img {
+  width: 486px;
+  height: 365px;
 }
 
 .destacados {
-  border: 6px solid blueviolet;
-  background-color: rgba(137, 43, 226, 0.911);
-  display: grid;
-  grid-template-columns: 2fr;
-  grid-template-rows: 2fr;
-  gap: 15px;
-  justify-items: center;
+  width: 320px;
+  margin-bottom: 10px;
+}
+
+.destacados iframe {
+  width: 300px;
+}
+
+.formulario {
+  width: 360px;
 }
 
 @media (min-width: 500px) {
@@ -195,6 +252,10 @@ footer {
   .stvivo iframe {
     width: 440px;
   }
+  .descripcion, .tbh {
+    width: 480px;
+    margin-left: 0 auto;
+  }
   .tbh img {
     width: 300px;
     height: 260px;
@@ -203,21 +264,33 @@ footer {
     width: 480px;
     margin: auto;
   }
+  .recomendados {
+    width: 480px;
+  }
+  .recomendados .juegosindie div {
+    margin-right: 50px;
+  }
   .recomendados .juegosindie img {
     width: 350px;
     height: 300px;
   }
-  .juegosindie {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    margin: auto;
-  }
   .juegosindie img {
-    margin-top: 10px;
+    margin-top: 0px;
   }
   .formulario {
-    width: 460px;
+    width: 80%;
+  }
+  .destacados {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  }
+  .destacados iframe {
+    width: 420px;
+    height: 237px;
   }
 }
 @media (min-width: 768px) {
@@ -225,18 +298,21 @@ footer {
     background-position: center;
   }
   .stvivo {
-    width: 640px;
+    width: 90%;
     text-align: center;
   }
   .stvivo iframe {
     width: 560px;
+  }
+  .descripcion, .tbh {
+    width: 90%;
   }
   .tbh img {
     height: 284px;
     width: auto;
   }
   .noticiasUlt {
-    width: 720px;
+    width: 90%;
     margin: auto;
     margin-bottom: 15px;
   }
@@ -256,7 +332,11 @@ footer {
     height: 150px;
   }
   .formulario {
-    width: 700px;
+    width: 90%;
+  }
+  .destacados iframe {
+    width: 560px;
+    height: 315px;
   }
 }
 @media (min-width: 1024px) {
@@ -266,9 +346,14 @@ footer {
   .stvivo {
     width: 650px;
     text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
   }
   .stvivo iframe {
     width: 560px;
+  }
+  .descripcion {
+    margin-left: 20px;
   }
   .tbh img {
     height: 284px;
@@ -276,13 +361,13 @@ footer {
   }
   .noticiasUlt {
     color: black;
-    border: 6px solid blueviolet;
+    border: 3px solid blueviolet;
     width: 90%;
     padding: 10px;
     margin-bottom: 40px;
     margin-left: 40px;
     margin-top: 30px;
-    background-color: rgba(137, 43, 226, 0.911);
+    background-color: rgba(187, 145, 224, 0.911);
   }
   .recomendados {
     color: black;
@@ -295,7 +380,7 @@ footer {
     margin-top: 20px;
     margin-bottom: 80px;
     width: 1100px;
-    border: 6px solid blueviolet;
+    border: 3px solid blueviolet;
   }
   .juegosindie {
     display: grid;
@@ -307,6 +392,15 @@ footer {
     width: 500px;
     height: 425px;
     margin-top: 15px;
+  }
+  .destacados {
+    width: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .destacados iframe {
+    width: 336px;
+    height: 189px;
   }
 }
 .zoom {

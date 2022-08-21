@@ -1,12 +1,12 @@
 .noticiasUlt{
     color: rgb(0, 0, 0);
-    border: 6px solid blueviolet;
+    border: 3px solid blueviolet;
     width: 90%;
     padding: 10px;
     margin-bottom: 140px;
     margin-left: 40px;
     margin-top: 30px;
-    background-color:rgba(137, 43, 226, 0.911);
+    background-color:$background;
     .card{
         position:static;
     }
@@ -25,10 +25,3 @@
         font-size: 22px;
     }
 }
-
-
-
-
-
-
-
