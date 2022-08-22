@@ -11,6 +11,37 @@
 @import "videosDestacados";
 @import "form";
 
+$redestbh: (
+    twitch:#4d3c99,
+    twitter:#4699b4,
+    instagram: #9b0a52,
+);
+@each $redtbh, $colortbh in $redestbh{
+    .btn--#{$redtbh}{
+        background-color: $colortbh;
+    }
+}
+
+.quienesSomos{
+    @extend .descripcion;
+    margin-top: 60px;
+    b{
+        font-size: 48px;
+    }
+    margin-bottom: 60px;
+}
+
+
+@mixin colores($colorLetra, $colorFondo){
+    color: $colorLetra;
+    background-color: $colorFondo;
+}
+
+.quienesSomos{
+    @include colores(white, rgb(65, 35, 0));
+    font-size: 24px;
+    font-weight: 400;
+}
 
 .juegosindie{
     display: grid;
@@ -40,7 +71,6 @@
     .descripcion, .tbh{
         width: 550px;
         margin-left: 10px;
-        margin-bottom: 10px;
     }
     .noticiasUlt{
         width:550px;
