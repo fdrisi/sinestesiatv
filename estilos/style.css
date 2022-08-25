@@ -118,10 +118,6 @@ footer {
   color: black;
   text-align: center;
   background-color: rgba(117, 43, 43, 0.87);
-  padding: 6px;
-  margin: 60px;
-  margin-top: 20px;
-  margin-bottom: 1em;
   border: 3px solid blueviolet;
 }
 .recomendados b {
@@ -200,7 +196,7 @@ footer {
 
 .quienesSomos {
   color: white;
-  background-color: rgb(65, 35, 0);
+  background-color: rgb(153, 106, 52);
   font-size: 24px;
   font-weight: 400;
 }
@@ -221,8 +217,8 @@ footer {
     width: 550px;
     margin: 0 auto;
     margin-top: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     text-align: center;
   }
   .stvivo iframe {
@@ -232,14 +228,14 @@ footer {
 }
 .descripcion, .quienesSomos, .tbh {
   width: 550px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .noticiasUlt {
   width: 550px;
   display: block;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   margin-bottom: 10px;
 }
 
@@ -251,16 +247,6 @@ footer {
 
 .recomendados .juegosindie {
   width: 520px;
-}
-
-.recomendados .juegosindie img {
-  width: 486px;
-  height: 365px;
-}
-
-.destacados {
-  width: 320px;
-  margin-bottom: 10px;
 }
 
 .destacados iframe {
@@ -277,13 +263,18 @@ footer {
   }
   .stvivo {
     width: 480px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 10px;
   }
   .stvivo iframe {
     width: 440px;
   }
   .descripcion, .quienesSomos, .tbh {
     width: 480px;
-    margin-left: 0 auto;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .tbh img {
     width: 300px;
@@ -295,16 +286,13 @@ footer {
   }
   .recomendados {
     width: 480px;
+    margin-top: 10px;
   }
   .recomendados .juegosindie div {
-    margin-right: 50px;
+    margin: 0px auto;
   }
-  .recomendados .juegosindie img {
-    width: 350px;
-    height: 300px;
-  }
-  .juegosindie img {
-    margin-top: 0px;
+  .juegosindie {
+    margin: 0px auto;
   }
   .formulario {
     width: 80%;
@@ -342,7 +330,6 @@ footer {
   }
   .noticiasUlt {
     width: 90%;
-    margin: auto;
     margin-bottom: 15px;
   }
   .recomendados {
@@ -354,11 +341,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
-    margin: 0;
-  }
-  .recomendados .juegosindie img {
-    width: 200px;
-    height: 150px;
   }
   .formulario {
     width: 90%;
@@ -401,24 +383,20 @@ footer {
   .recomendados {
     color: black;
     text-align: center;
+    align-items: center;
     font-weight: 800;
     background-color: rgba(117, 43, 43, 0.87);
     font-size: 20px;
-    padding: 6px;
-    margin: auto;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-top: 20px;
     margin-bottom: 80px;
-    width: 1100px;
-    border: 3px solid blueviolet;
+    width: 100%;
   }
   .juegosindie {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
-    margin: 0;
-  }
-  .recomendados .juegosindie img {
-    margin-top: 0;
   }
   .destacados {
     width: 350px;
@@ -435,5 +413,5 @@ footer {
 }
 
 .zoom:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
