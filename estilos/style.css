@@ -53,7 +53,7 @@ footer {
   background-color: rgba(187, 145, 224, 0.911);
 }
 
-.descripcion, .quienesSomos {
+.descripcion {
   font-size: 28px;
   color: black;
   font-weight: 800;
@@ -162,6 +162,30 @@ footer {
   height: 189px;
 }
 
+.noticia {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background-color: rgba(187, 145, 224, 0.911);
+}
+.noticia .noticiaTitulo {
+  font-size: 36px;
+  font-weight: bold;
+}
+.noticia .noticiaSub {
+  font-size: 28px;
+  font-weight: 700;
+}
+.noticia p {
+  font-size: 22px;
+  font-weight: 700;
+}
+.noticia .notiFoto {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .formulario {
   color: black;
   border: 3px solid blueviolet;
@@ -184,21 +208,6 @@ footer {
 
 .btn--instagram {
   background-color: #9b0a52;
-}
-
-.quienesSomos {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-.quienesSomos b {
-  font-size: 48px;
-}
-
-.quienesSomos {
-  color: white;
-  background-color: rgb(153, 106, 52);
-  font-size: 24px;
-  font-weight: 400;
 }
 
 .juegosindie {
@@ -226,7 +235,7 @@ footer {
     height: 284px;
   }
 }
-.descripcion, .quienesSomos, .tbh {
+.descripcion, .tbh {
   width: 550px;
   margin-left: 5px;
 }
@@ -262,16 +271,16 @@ footer {
     background-position: center;
   }
   .stvivo {
-    width: 480px;
+    width: 80%;
     margin: auto;
     margin-top: 60px;
     margin-bottom: 10px;
   }
   .stvivo iframe {
-    width: 440px;
+    width: 80%;
   }
-  .descripcion, .quienesSomos, .tbh {
-    width: 480px;
+  .descripcion, .tbh {
+    width: 80%;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -281,15 +290,14 @@ footer {
     height: 260px;
   }
   .noticiasUlt {
-    width: 480px;
+    width: 80%;
     margin: auto;
   }
   .recomendados {
-    width: 480px;
+    width: 80%;
+    margin: 0 auto;
     margin-top: 10px;
-  }
-  .recomendados .juegosindie div {
-    margin: 0px auto;
+    margin-bottom: 40px;
   }
   .juegosindie {
     margin: 0px auto;
@@ -319,9 +327,9 @@ footer {
     text-align: center;
   }
   .stvivo iframe {
-    width: 560px;
+    width: 90%;
   }
-  .descripcion, .quienesSomos, .tbh {
+  .descripcion, .tbh {
     width: 90%;
   }
   .tbh img {
@@ -333,13 +341,16 @@ footer {
     margin-bottom: 15px;
   }
   .recomendados {
-    width: 760px;
+    width: 90%;
     margin: auto;
     margin-bottom: 40px;
   }
   .juegosindie {
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 15px;
   }
   .formulario {
@@ -363,7 +374,7 @@ footer {
   .stvivo iframe {
     width: 560px;
   }
-  .descripcion, .quienesSomos {
+  .descripcion {
     margin-left: 20px;
   }
   .tbh img {
@@ -373,30 +384,35 @@ footer {
   .noticiasUlt {
     color: black;
     border: 3px solid blueviolet;
-    width: 90%;
+    width: 95%;
     padding: 10px;
-    margin-bottom: 40px;
-    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-left: 0px auto;
     margin-top: 30px;
     background-color: rgba(187, 145, 224, 0.911);
   }
   .recomendados {
     color: black;
     text-align: center;
+    justify-content: space-evenly;
     align-items: center;
     font-weight: 800;
     background-color: rgba(117, 43, 43, 0.87);
+    width: 95%;
+    margin-left: 0px auto;
     font-size: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
     margin-top: 20px;
     margin-bottom: 80px;
-    width: 100%;
   }
   .juegosindie {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .juegosindie div {
+    height: 300px;
   }
   .destacados {
     width: 350px;
