@@ -162,28 +162,39 @@ footer {
   height: 189px;
 }
 
-.noticia {
+.noticia, .quienesSomos {
   margin-top: 50px;
   margin-bottom: 30px;
   background-color: rgba(187, 145, 224, 0.911);
 }
-.noticia .noticiaTitulo {
+.noticia .noticiaTitulo, .quienesSomos .noticiaTitulo, .quienesSomos .quienesTitulo {
   font-size: 36px;
   font-weight: bold;
 }
-.noticia .noticiaSub {
+.noticia .noticiaSub, .quienesSomos .noticiaSub, .quienesSomos .quienesBajada {
   font-size: 28px;
   font-weight: 700;
 }
-.noticia p {
+.noticia p, .quienesSomos p {
   font-size: 22px;
   font-weight: 700;
 }
-.noticia .notiFoto {
+.noticia .notiFoto, .quienesSomos .notiFoto {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.quienesSomos {
+  background-color: rgba(187, 145, 224, 0.911);
+  height: 100%;
+  margin-top: 50px;
+}
+.quienesSomos img {
+  float: left;
+  margin-right: 15px;
+  width: 40%;
 }
 
 .formulario {

@@ -1,0 +1,18 @@
+.quienesSomos{
+    @extend .noticia;
+    background-color: $background;
+    height: 100%;
+    margin-top: 50px;
+    .quienesTitulo{
+        @extend .noticiaTitulo;
+    }
+    .quienesBajada{
+        @extend .noticiaSub;
+    }
+    img{
+    float: left;
+    margin-right: 15px;
+    width: 40%;
+    }
+
+}
