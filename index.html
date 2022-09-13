@@ -31,7 +31,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
@@ -45,11 +45,11 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                   <li><a class="dropdown-item" href="./sections/quienesSomos.html">SinestesiaTV</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="./sections/quienesSomos/99en1.html">#99en1</a></li>
-                  <li><a class="dropdown-item" href="./sections/quienesSomos/konbanhaBsAs.html">Konbanha BsAs</a></li>
-                  <li><a class="dropdown-item" href="./sections/quienesSomos/laPosadaInventada.html">La Posada Inventada</a></li>
+                  <li><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" href="./sections/quienesSomos/99en1.html">#99en1</a></li>
+                  <li><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"  href="./sections/quienesSomos/konbanhaBsAs.html">Konbanha BsAs</a></li>
+                  <li><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"  href="./sections/quienesSomos/laPosadaInventada.html">La Posada Inventada</a></li>
                   <li><a class="dropdown-item" href="./sections/quienesSomos/pastaBase.html">Pasta Base</a></li>
-                  <li><a class="dropdown-item" href="./sections/quienesSomos/seccionGamers.html">Sección Gamers</a></li>
+                  <li><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"  href="./sections/quienesSomos/seccionGamers.html">Sección Gamers</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -79,7 +79,12 @@
       <div class="redestbh"><a target="_blank" href="https://www.twitch.tv/diegotbh"><input type="button" value="Twitch" class="btn--twitch"></a></div>
       <div class="redestbh"><a target="_blank" href="https://twitter.com/the_bookhall"><input type="button" value="Twitter" class="btn--twitter"></a></div>
       <div class="redestbh"><a target="_blank" href="https://www.instagram.com/thebookhall_lyc/?hl=es"><input type="button" value="Instagram" class="btn--instagram"></a></div>
-        <img src="./img/tbh.jpg">
+        <picture>
+          <source srcset="./img/tbh-320.jpg" media="(max-width:499px)">
+          <source srcset="./img/tbh-320.jpg" media="(max-width:767px)">
+          <source srcset="./img/tbh-768.jpg" media="(max-width:1023px)">
+         <img src="./img/tbh.jpg" loading="lazy" class="zoom" alt="The BookHall - Libros y Cómics">
+       </picture>
       </div>
     </div>
   </div>
